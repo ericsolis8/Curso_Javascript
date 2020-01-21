@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>funciones</title>
+    <style type="text/css">
+    .centrado {
+        text-align: center;
+    }
+    </style>
+    <script>
+        function dia_de_hoy() {
+
+            var hoy = new Date();
+
+            document.write(hoy+"<br>"); 
+            document.write("Algo más corto" + hoy.toDateString());
+        } 
+    </script>
+</head>
+<body>
+    <h1 class="centrado"><strong>¿Que dia es hoy?</strong></h1>
+
+    <p>Hoy es:<script>dia_de_hoy();</script> </p>
+</body>
+</html>

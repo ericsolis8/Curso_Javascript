@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+.container {
+    background-color: rgb(132, 141, 124);
+    text-align: center;
+    width: 400px;
+    height: 400px;
+}
+.container:hover {
+    background-color: rgb(211, 216, 203);
+    color: black;
+}
+button {
+    margin-top: 10px;
+    width: 380px;
+    height: 380px;
+    background-color: rgb(136, 28, 28);
+    color: white;
+    text-align: center;
+    font-size: 200px;
+}
+button:hover {
+    background-color: rgb(106, 175, 65);
+    color: rgb(255, 253, 253);
+}
+/* i:hover {
+    transform: rotate(360deg);
+    transition: 3s ease;
+} */

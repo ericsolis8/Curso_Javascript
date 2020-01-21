@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function escribe_nombre(nombre) {
+            document.write(nombre);
+        }
+        var name = prompt("Introduzca su nombre: ");
+    </script>
+</head>
+<body>
+    <p style="font-size: 24px; font-weight: bold">Hola:<script>escribe_nombre(name);</script> .Bienvenido!</p>
+    <p>Esta es una web que trata de explicar conceptos de Javascript, 
+        asi que puedes plantear las dudas que desees.
+
+        <h4>¡Saludos, <script>escribe_nombre(name);</script>!</h4>
+    </p>
+</body>
+</html>

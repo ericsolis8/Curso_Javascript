@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="weather">Selecciona tu localidad</label>
+    <hr>
+    <select id="weather">
+        <option value="">Ninguno</option>
+        <option value="providencia">Providencia</option>
+        <option value="omealca">Omealca</option>
+        <option value="cordoba">Córdoba</option>
+    </select>
+
+    <p></p>
+
+    <!-- <script>
+    const select = document.querySelector('select');
+    const para = document.querySelector('p');
+
+    select.addEventListener('change', setWeather);
+
+    function setWeather() {
+        const opcion = select.value;
+
+        if(opcion === 'providencia'){
+            para.textContent = 'Localidad: '+opcion;
+        } else if(opcion === 'omealca'){
+            para.textContent = 'Localidad: '+opcion;
+        } else if(opcion === 'cordoba'){
+            para.textContent = 'Localidad: '+opcion;
+        } else {
+            para.textContent = '';
+        }
+    }
+    </script> -->
+    <script>
+        const select = document.querySelector('select');
+        const para = document.querySelector('p');
+    
+        select.addEventListener('change', setWeather);
+    
+        function setWeather() {
+            const opcion = select.value;
+    
+            switch(opcion) {
+                case 'providencia':
+                para.textContent = 'Localidad: Providencia';
+                break;
+                case 'omealca':
+                para.textContent = 'Localidad: Omealca';
+                break;
+                case 'cordoba':
+                para.textContent = 'Localidad: Córdoba';
+                break;
+                default:
+                para.textContent = '';
+            }
+        }
+        </script>
+</body>
+</html>

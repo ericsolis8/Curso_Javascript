@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calificaciones</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .contenedor {
+            background-color: #cfcfcf;
+            padding: 30px;
+        }
+
+        .btn {
+            width: 130px;
+            height: 25px;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2>Bienvenido</h2>
+        <p><button class="btn" onclick="ciclo();">Probar ciclo</button></p>
+        <p id="resultado"></p>
+    </div>
+    <script text="javascript">
+        function ciclo() {
+            const resultado = prompt('Escribe tu calificación: ');
+
+            if (resultado <= 10) {
+
+                if (resultado >= 6) {
+                    document.getElementById('resultado').innerHTML = 'Vuelve a intentarlo';
+
+                    if (resultado >= 7 && resultado <= 8) {
+                        document.getElementById('resultado').innerHTML = 'Aprobado';
+                    }
+
+                    if (resultado >= 9 && resultado <= 10) {
+                        document.getElementById('resultado').innerHTML = 'Excelente';
+                    }
+                }
+                else {
+                    document.getElementById('resultado').innerHTML = 'No Aprobado';
+                }
+            }
+            else {
+                alert('Tu calificación no puede ser mayor a 10');
+            }
+        }
+
+    </script>
+    <!--
+    <script>
+        var precioCoche = 60000;
+        var dineroAhorrado = prompt("Cuanto dinero tienes ahorrado");
+
+        if (dineroAhorrado >= precioCoche) {
+            alert("Puedes comprar el coche");
+        } else {
+            alert("No tienes el dinero suficiente para comprar el carro");
+        }
+
+        alert("Continua la ejecucion del programa");
+    </script>
+    -->
+</body>
+
+</html>

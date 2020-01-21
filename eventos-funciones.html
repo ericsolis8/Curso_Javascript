@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            text-align: center;
+            width: 50%;
+            border: 2px solid green;
+            margin: auto;
+        }
+        img {
+            padding: 0 5px;
+            width: 250px;
+            height: 200px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var elementos = document.querySelectorAll("img");
+            for(var i=0; elementos.length; i++) {
+                elementos[i].addEventListener("mouseover", cambiar, false);
+                elementos[i].addEventListener("mouseout", restaurar, false);
+            }
+        });
+        function cambiar(e) {
+            if(e.target==img1){
+                $("#img1").attr("src", "dev.png");
+            } else if(e.target==img2) {
+                $("#img2").attr("src", "dev.png");
+            } else if(e.target==img3) {
+                $("#img3").attr("src", "afro.png");
+            }
+            
+        }
+        function restaurar(e) {
+            if(e.target==img1){
+                $("#img1").attr("src", "LOGOTIPO.png");
+            } else if(e.target==img2) {
+                $("#img2").attr("src", "LOGOTIPO2.png");
+            } else if(e.target==img3) {
+                $("#img3").attr("src", "LOGOTIPO3.png");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Galeria Imagenes</h1>
+    <table width="100%" border="0">
+        <tr>
+            <td><img src="LOGOTIPO.png" id="img1"></td>
+            <td><img src="LOGOTIPO2.png" id="img2"></td>
+            <td><img src="LOGOTIPO3.png" id="img3"></td>
+        </tr>
+    </table>
+</body>
+
+</html>

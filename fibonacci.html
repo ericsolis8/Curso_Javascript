@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="estilos.css" type=text/css rel=stylesheet>
+        <p class=titulopagina>
+            <title>Serie de Fibonacci</title>
+        </p>
+    </head>
+
+    <body>
+        <h1>Serie de Fibonacci</h1>
+        <script type="text/javascript">
+            var entrada = window.prompt("Cantidad de datos a desplegar: ", "0");
+            var a = parseFloat(entrada);
+            var anterior, nuevo, aux;
+            if (a <= 0)
+                document.write("El dato debe de ser positivo.\n");
+            else {
+                anterior = 0;
+                nuevo = 1;
+                document.write("La serie de Fibonacci es: ");
+                for (i=1; i<=a; i++) {
+                    aux = nuevo;
+                    nuevo += anterior;
+                    document.write(nuevo + " ");
+                    anterior = aux;
+                }
+            }
+        
+        </script>
+    </body>
+</html>

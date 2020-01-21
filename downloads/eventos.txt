@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eventos</title>
+    <style>
+        .contenedor {
+            background-color: #cfcfcf;
+            width: 400px;
+            height: 250px;
+            margin-left: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+        img {
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Foto de mi crush</h2>
+        <img id="image" src="javascript.jpg"><br>
+        <button id="btn">Me gusta</button>
+    </div>
+    <a href="eventos.html" download="eventos.txt">Download Text</a>
+
+    <script text="javascript">
+        
+        document.getElementById('btn').addEventListener('click', evento);
+        document.getElementById('image').addEventListener('mouseover', evento_dos);
+
+        function evento() {
+            alert('Ha ocurrido un evento.');
+        }
+
+        function evento_dos() {
+            console.log('Evento MouseOver');
+        }
+    </script>
+</body>
+</html>

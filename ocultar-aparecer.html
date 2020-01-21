@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        #myDIV {
+            width: 500px;
+            height: 500px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <p>Haga clic en el botón "Probar" para alternar entre ocultar y mostrar el elemento DIV: </p>
+    <button onclick="myFunction()">Probar</button>
+    <div id="myDIV">
+            Este es mi elemento DIV.
+
+            <p>Tenga en cuenta que aunque el elemento esté oculto, permanece en su posición y tamaño originales.</p>
+    </div>
+    
+    <script>
+        function myFunction() {
+         var x = document.getElementById('myDIV');
+            if (x.style.visibility === 'hidden') {
+                x.style.visibility = 'visible';
+            } else {
+                x.style.visibility = 'hidden';
+            }
+        }
+    </script>
+</body>
+</html>

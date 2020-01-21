@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leyendo y Cambiando Atributos</title>
+<style> 
+    #primer_parrafo {
+        background-color: #0c0c;
+    }
+</style>
+<script src="jquery-2.2.3.min.js"></script>
+<script>
+    $(document).ready(function() {
+        //var colorFondo = $("#primer_parrafo").css("background-color", "#cfcf");
+        $("p.destacado").css("border", "3px dotted blue");
+    });
+</script>
+</head>
+<body>
+    <p id="primer_parrafo"> Parrafo principal </p>    
+    <p class="destacado">Destacado</p>
+    <p>Parrafo feo</p>
+</body>
+</html>
